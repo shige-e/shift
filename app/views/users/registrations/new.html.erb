@@ -1,0 +1,54 @@
+
+<div class="field">
+<h2>新規登録</h2>
+</div>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "users/shared/error_messages", resource: resource %>
+  <div class="text">
+    <%= f.label :メールアドレス %><br />
+  </div>
+    <div class="cp_iptxt">
+    <%= f.email_field :email, class:"ef", type:"text", autofocus: true, autocomplete: "email"  %>
+   <span class="focus_bg"></span>
+   </div>
+
+  <div class="text">
+    <%= f.label :名前 %><br />
+    </div>
+    <div class="cp_iptxt">
+    <%= f.text_field :name, class:"ef", type:"text", autofocus: true, autocomplete: "name" %>
+    <span class="focus_bg"></span>
+  </div>
+
+  <div class="text">
+    <%= f.label :勤怠番号 %><br />
+    </div>
+  <div class="cp_iptxt">
+    <%= f.text_field :number, class:"ef", type:"text", autofocus: true, autocomplete: "number" %>
+    <span class="focus_bg"></span>
+  </div>
+
+  <div class="text">
+    <%= f.label :パスワード %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %>文字以上)</em>
+    <% end %><br />
+    </div>
+    <div class="cp_iptxt">
+    <%= f.password_field :password, class:"ef", type:"text", autocomplete: "new-password" %>
+    <span class="focus_bg"></span>
+  </div>
+
+  <div class="text">
+    <%= f.label :パスワード（確認用） %><br />
+    </div>
+    <div class="cp_iptxt">
+    <%= f.password_field :password_confirmation, class:"ef", type:"text", autocomplete: "new-password" %>
+    <span class="focus_bg"></span>
+  </div>
+    <div>
+    <%= f.submit  "登録", class:"btn btn--orange btn--radius" %>
+    </div>
+<% end %>
+
+<%= render "users/shared/links" %>

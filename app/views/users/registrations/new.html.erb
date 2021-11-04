@@ -50,5 +50,47 @@
     <%= f.submit  "登録", class:"btn btn--orange btn--radius" %>
     </div>
 <% end %>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+
+  <title>Calendar</title>
+</head>
+  <%= form_with(model: @shifts, local: true) do |form| %>
+
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th id="prev">&laquo;</th>
+        <th id="title" colspan="5"></th>
+        <th id="next">&raquo;</th>
+      </tr>
+      <tr>
+        <th>Sun</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td id="today" colspan="7">Today</td>
+      </tr>
+              <%= form.text_field :title %>
+
+    </tfoot>
+  </table>
+
+</body>
+<% end %>
+
+</html>
 
 <%= render "users/shared/links" %>

@@ -14,4 +14,6 @@ class User < ApplicationRecord
   def email_changed?
     false
   end
+
+  has_many :events
 end

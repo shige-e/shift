@@ -60,3 +60,7 @@ group :development do
 end
 
 gem 'devise'
+
+gem 'jquery-rails', '4.3.3'
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'

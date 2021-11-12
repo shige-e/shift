@@ -1,27 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# アプリ名
+シフト作成						
+# 概要	
+アルバイトがオンライン上でシフト提出ができ、それを管理者がシフトの編集ができる。						
+# 制作背景						
+前職でシフト作成している際に紙媒体での提出であったのでいちいち提出しに店舗にくる労力の削減と紙のコストカット						
 
 
 ## users テーブル
